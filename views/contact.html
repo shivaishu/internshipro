@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Bites - Contact</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">🍴 Delicious Bites</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="reserve.html">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <!-- LEFT SIDE: IMAGE & INFO -->
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="icon-wrap">
+            <!-- Location SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Our Location</h3>
+            <p>123 Food Street, Culinary City</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon-wrap">
+            <!-- Phone SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.83.34 1.65.66 2.43a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.92 6.92l1.27-1.27a2 2 0 0 1 2.11-.45c.78.32 1.6.54 2.43.66A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Call Us</h3>
+            <p>+123 456 7890</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon-wrap">
+            <!-- Hours SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Opening Hours</h3>
+            <p>Mon–Sun: 9am – 10pm</p>
+          </div>
+        </div>
+        <!-- A decorative image below the info -->
+        <img src="contact.jpg" alt="Restaurant Interior" class="contact-image">
+      </div>
+
+      <!-- RIGHT SIDE: FORM -->
+      <div class="contact-form-container">
+        <h2>Get in Touch</h2>
+        <p>We’d love to hear from you! Fill out the form and we’ll get back to you soon.</p>
+        <form class="contact-form" action="/contact.html" method="POST">
+          <input type="text" placeholder="Full Name" name="name" required>
+          <input type="email" placeholder="Email Address" name="email" required>
+          <textarea placeholder="Your message..." name="message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

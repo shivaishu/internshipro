@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <link rel="stylesheet" href="accstyle.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li class="listcontainer">New Sign In
+        <svg class="whitefill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path d="M8.00004 11C7.74004 11 7.49004 10.9 7.29004 10.71L3.79004 7.21005L5.20004 5.80005L7.99004 8.59005L10.78 5.80005L12.19 7.21005L8.69004 10.71C8.49004 10.91 8.24004 11 7.98004 11H8.00004Z"></path>
+        </svg>
+      </li>
+      <li class="listcontainer">Multi-session Disabled
+        <svg class="whitefill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path d="M8.00004 11C7.74004 11 7.49004 10.9 7.29004 10.71L3.79004 7.21005L5.20004 5.80005L7.99004 8.59005L10.78 5.80005L12.19 7.21005L8.69004 10.71C8.49004 10.91 8.24004 11 7.98004 11H8.00004Z"></path>
+        </svg>
+      </li>
+      <li class="listcontainer">English
+        <svg class="whitefill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path d="M8.00004 11C7.74004 11 7.49004 10.9 7.29004 10.71L3.79004 7.21005L5.20004 5.80005L7.99004 8.59005L10.78 5.80005L12.19 7.21005L8.69004 10.71C8.49004 10.91 8.24004 11 7.98004 11H8.00004Z"></path>
+        </svg>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="acccontain">
+    <section class="acc">
+      <h1>Create Your Account</h1>
+      <form method="POST" action="/account.html">
+        <div class="input-group">
+          <input type="text" name="accountid" placeholder="Account ID" required />
+        </div>
+        <div class="input-group">
+          <input type="text" name="username" placeholder="Username" required />
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Email Address" required />
+        </div>
+        <div class="input-group">
+          <input type="password" name="pass" id="pass1" placeholder="Password" required />
+        </div>
+        <button type="submit" class="create-btn">Create Account</button>
+        <p class="login-redirect">Already have an account? <a href="/signin.html">Sign in</a></p>
+      </form>
+    </section>
+
+    <section class="blackbox">
+      <div>
+        SVS Nova: New foundation models delivering frontier intelligence and world-class performance.
+      </div>
+    </section>
+  </main>
+</body>
+</html>

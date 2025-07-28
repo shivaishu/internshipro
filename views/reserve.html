@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Bites - Reserve</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🍴 Delicious Bites</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="reserve.html" class="active">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Reservation Section -->
+  <section class="reservation">
+    <div class="reservation-container">
+      <h2>🍽️ Book a Table</h2>
+      <p>Reserve your table now and enjoy a memorable dining experience with us!</p>
+
+      <form id="reservation-form" action="/reserve.html" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="date">Reservation Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <div class="form-group">
+          <label for="time">Reservation Time</label>
+          <input type="time" id="time" name="time" required />
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Number of Guests</label>
+          <input type="number" id="guests" name="guests" min="1" max="20" placeholder="e.g. 4" required />
+        </div>
+
+        <button type="submit" class="btn-primary">Reserve Now</button>
+      </form>
+
+      <p id="form-message"></p>
+    </div>
+  </section>
+</body>
+</html>

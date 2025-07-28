@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Recipe Collection</title>
+<style>
+    /* ====== GLOBAL STYLES ====== */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #fdf6f0;
+        color: #333;
+        line-height: 1.6;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* ====== HEADER ====== */
+    header {
+        background: url('indian_food_banner.jpg') center/cover no-repeat;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    header h1 {
+        background: rgba(0,0,0,0.4);
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+
+    /* ====== CONTAINER ====== */
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    /* ====== SECTION HEADINGS ====== */
+    h2.section-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #d35400;
+        border-left: 6px solid #d35400;
+        padding-left: 12px;
+    }
+
+    /* ====== RECIPE GRID ====== */
+    .recipe-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    .recipe-card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .recipe-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .recipe-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .recipe-card-content {
+        padding: 15px 18px;
+    }
+    .recipe-card-content h3 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+        color: #333;
+    }
+    .recipe-card-content p {
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #f3e1d5;
+        margin-top: 50px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .container img{
+        object-fit: contain;
+    }
+</style>
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header>
+    <h1>🍛 Indian Recipe Collection 🍲</h1>
+</header>
+
+<div class="container">
+
+    <!-- ====== VEGETARIAN ====== -->
+    <h2 class="section-title">Vegetarian Dishes</h2>
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <img src="vegetable-curry-recipe.jpg" alt="Vegetable Curry">
+            <div class="recipe-card-content">
+                <h3>Vegetable Curry</h3>
+                <p>A rich and flavorful curry made with seasonal vegetables and aromatic spices.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="masala_paneer.jpg" alt="Masala Paneer">
+            <div class="recipe-card-content">
+                <h3>Masala Paneer</h3>
+                <p>Soft paneer cubes simmered in a dhaba-style spicy onion-tomato gravy.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="aloo_gobi.jpg" alt="Aloo Gobi">
+            <div class="recipe-card-content">
+                <h3>Aloo Gobi</h3>
+                <p>Classic combination of potatoes and cauliflower roasted with Indian spices.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="dal_makhani.jpg" alt="Dal Makhani">
+            <div class="recipe-card-content">
+                <h3>Dal Makhani</h3>
+                <p>Slow-cooked black lentils in a creamy buttery sauce, a Punjabi delight.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== NON-VEG ====== -->
+    <h2 class="section-title">Non-Vegetarian Dishes</h2>
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <img src="butter_chicken.jpg" alt="Butter Chicken">
+            <div class="recipe-card-content">
+                <h3>Butter Chicken</h3>
+                <p>Tender chicken in a creamy tomato-based sauce, mildly spiced and delicious.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="rogan_josh.avif" alt="Roghan Josh">
+            <div class="recipe-card-content">
+                <h3>Roghan Josh</h3>
+                <p>Kashmiri-style lamb curry with a vibrant red color and aromatic spices.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="tandoori_chicken.jpg" alt="Tandoori Chicken">
+            <div class="recipe-card-content">
+                <h3>Tandoori Chicken</h3>
+                <p>Marinated chicken roasted in a tandoor, smoky and bursting with flavor.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="fish_curry.jpg" alt="Fish Curry">
+            <div class="recipe-card-content">
+                <h3>Fish Curry</h3>
+                <p>Fresh fish simmered in a tangy tomato-onion gravy, coastal style.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== SNACKS ====== -->
+    <h2 class="section-title">Snacks</h2>
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <img src="samosa.webp" alt="Samosa">
+            <div class="recipe-card-content">
+                <h3>Samosa</h3>
+                <p>Crispy triangular pastry filled with spicy potatoes and peas.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="pakora.jpg" alt="Pakora">
+            <div class="recipe-card-content">
+                <h3>Pakora</h3>
+                <p>Vegetables fried in chickpea batter, crunchy and addictive.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="bhel_puri.jpg" alt="Bhel Puri">
+            <div class="recipe-card-content">
+                <h3>Bhel Puri</h3>
+                <p>Puffed rice, chutneys, and spices for a sweet, spicy, tangy street snack.</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <img src="vada_pav.jpg" alt="Vada Pav">
+            <div class="recipe-card-content">
+                <h3>Vada Pav</h3>
+                <p>Mumbai’s iconic snack – spicy potato patty in a soft bun.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Indian Recipe Collection. Made with ❤️ for food lovers.
+</footer>
+
+</body>
+</html>
